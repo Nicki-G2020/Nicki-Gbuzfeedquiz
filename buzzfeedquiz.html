@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WhatDoesYourFavoriteColorSayAboutYou?</title>
+</head>
+<body>
+<h1>What does your favorite color say about you?</h1>
+<h3>by nicki gaito</h3>
+<h2><label>choose a color!:</label></h2>
+<select id="colordropdown">
+	<option value="red">red</option>
+	<option value="orange">orange</option>
+	<option value="yellow">yellow</option>
+	<option value="green">green</option>
+	<option value="blue">blue</option>
+	<option value="purple">purple</option>
+	<option value="pink">pink</option>
+	<option value="black">black</option>
+</select>
+<h2><button type="button" onclick="aboutYou(document.getElementById('colordropdown').value)">show me my results!</button></h2>
+<p id="putHere"></p>
+}
+
+<button onclick="putOnScreen(document.getElementById('red').value)">
+	<img src="red.jpg.png" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('orange').value)">
+	<img src="orange.jpg.png" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('yellow').value)">
+	<img src="yellow.jpg" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('green').value)">
+	<img src="green.jpg.png" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('blue').value)">
+	<img src="blue.jpg.png" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('purple').value)">
+	<img src="purple.jpg.png" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('pink').value)">
+	<img src="pink.jpg" width="400" height="400"></button>
+<button onclick="putOnScreen(document.getElementById('black').value)">
+	<img src="black.jpg" width="400" height="400"></button>
+
+<p id="putHere"></p>
+
+<script>
+function putOnScreen(value){
+	document.getElementById('putHere').innerHTML=value;	
+}
+
+onEvent('red', "click", function( ) {
+  setText("putOnScreen", "youre super cool");
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>
